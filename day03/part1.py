@@ -22,7 +22,7 @@ def main(practice=False):
     summed_priorities = sum_priorities(misfiled_items)
 
     print(
-        f"The sum of the priorities of items in both compartments is {summed_priorities}."
+        f"The sum of priorities of items in both compartments is {summed_priorities}."
     )
     return summed_priorities
 
