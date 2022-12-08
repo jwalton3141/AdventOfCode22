@@ -23,7 +23,7 @@ def load_input(practice=False):
 
 
 def parse_instructions(instructions):
-    move_numbers = re.findall("\d+", "".join(instructions), flags=re.MULTILINE)
+    move_numbers = re.findall(r"\d+", "".join(instructions), flags=re.MULTILINE)
     moves = pd.DataFrame(
         np.array(move_numbers, dtype=int).reshape(len(move_numbers) // 3, 3),
         columns=["n", "from", "to"],
