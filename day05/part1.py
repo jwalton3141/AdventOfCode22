@@ -15,9 +15,7 @@ def main(practice=False):
     stacks = move_stacks(moves, stacks)
     top_crates = get_top_crates(stacks)
 
-    print(
-        f"After the rearrangmenet procedure, we should pass the elves the message {top_crates}."
-    )
+    print(f"After rearrangement, we should pass the elves the message {top_crates}.")
     return top_crates
 
 
