@@ -18,7 +18,7 @@ def main(practice=False):
     sizes = np.array(list(dir_sizes.values()))
     smallest_fix = sizes[sizes >= min_to_rm].min()
 
-    print(f"The smallest directory removable to fix the system is {smallest_fix}")
+    print(f"The smallest directory removable to fix the system is {smallest_fix}.")
     return smallest_fix
 
 
